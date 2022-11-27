@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:foodapp/modules/splashScreen/SplashScreen.dart';
-import 'package:get/get.dart';
+import 'package:foodapp/Layout/Home_Layout.dart';
+import 'package:get/get_navigation/src/root/get_material_app.dart';
 
 void main() {
   runApp(const FoodApp());
@@ -19,7 +19,7 @@ class FoodApp extends StatelessWidget {
       builder: (context, child) {
         return const GetMaterialApp(
           debugShowCheckedModeBanner: false,
-          home: SplashScreen(),
+          home: HomeLayout(),
         );
       },
     );

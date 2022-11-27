@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:foodapp/core/utils/assets.dart';
 import 'package:foodapp/modules/onBoardingScreen/OnBoardingScreen.dart';
-import 'package:get/get.dart';
-
+import 'package:get/get_navigation/get_navigation.dart';
+import 'package:get/get_navigation/src/routes/transitions_type.dart';
+import 'package:get/utils.dart';
 import 'widgets/splash_screen_body.dart';
 
 class SplashScreen extends StatefulWidget {
