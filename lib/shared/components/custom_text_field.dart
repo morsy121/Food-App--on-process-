@@ -3,22 +3,28 @@ import 'package:foodapp/core/Colors/colors.dart';
 
 // ignore: must_be_immutable
 class CustomTextField extends StatelessWidget {
-  CustomTextField(
+  const CustomTextField(
       {super.key,
+      this.prefixIcon,
       required this.hintText,
       this.maxLines = 1,
       required this.color});
   final String hintText;
   final int maxLines;
-  Color? color;
+  final Color? color;
+  final IconData? prefixIcon;
   @override
   Widget build(BuildContext context) {
-    return TextField(
+    return TextFormField(
       textAlign: TextAlign.start,
       textAlignVertical: TextAlignVertical.center,
       cursorColor: mainColor,
       maxLines: maxLines,
       decoration: InputDecoration(
+        prefixIcon: Icon(
+          prefixIcon,
+          size: 30,
+        ),
         hintText: hintText,
         contentPadding: const EdgeInsets.all(25),
         fillColor: color,

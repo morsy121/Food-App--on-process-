@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/src/widgets/framework.dart';
 import 'package:foodapp/core/Colors/colors.dart';
-import 'package:foodapp/shared/components/Navigator.dart';
 import 'package:foodapp/shared/components/custom_default_button.dart';
 import 'package:foodapp/shared/components/custom_text_field.dart';
 
